@@ -1,0 +1,36 @@
+<!-- Cards with media area -->
+
+<input
+  type="number"
+  placeholder="Search by ID"
+  [(ngModel)]="searchId"
+  (input)="searchById()"
+  class="form-control mb-3"
+/>
+@if(user.length !== 0){
+<mat-card
+  class="example-card mx-auto rounded-2 position-relative"
+  appearance="outlined"
+>
+  <div
+    class="layout d-flex align-items-center justify-content-center rounded-2"
+  >
+    <button class="btn btn-outline-danger" (click)="userDetails(user[0].id)">
+      show details
+    </button>
+  </div>
+  <mat-card-header>
+    <mat-card-title-group class="align-items-center">
+      <img
+        mat-card-sm-image
+        [src]="user[0].avatar"
+        class="rounded-circle mb-3"
+      />
+      <mat-card-title class=""
+        >{{ user[0].first_name }} {{ user[0].last_name }}</mat-card-title
+      >
+    </mat-card-title-group>
+  </mat-card-header>
+</mat-card>
+
+}

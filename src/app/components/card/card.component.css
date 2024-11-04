@@ -1,0 +1,14 @@
+mat-card {
+  min-width: 350px;
+}
+mat-card:hover .layout {
+  opacity: 1;
+}
+.layout {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 70%);
+  z-index: 1111;
+  opacity: 0;
+  transition: all 0.5s;
+}

@@ -1,0 +1,17 @@
+<section class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <div
+        class="inner position-absolute top-50 start-50 translate-middle bg-secondary-subtle rounded-5 shadow d-flex flex-column align-items-center justify-content-center py-4 px-3"
+      >
+        <card-media-size-example
+          [pageNum]="data"
+          [userID]="userID"
+        ></card-media-size-example>
+        <paginator-overview-example
+          (itemEvent)="data = $event"
+        ></paginator-overview-example>
+      </div>
+    </div>
+  </div>
+</section>

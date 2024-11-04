@@ -1,0 +1,13 @@
+.img,
+button {
+  width: fit-content;
+}
+p {
+  font-size: 25px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+span {
+  font-weight: normal;
+  font-size: 22px;
+}

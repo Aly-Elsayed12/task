@@ -1,0 +1,32 @@
+<section class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <div
+        class="inner position-absolute top-50 start-50 translate-middle bg-secondary-subtle rounded-5 shadow py-4 px-3"
+      >
+        <div class="img mx-auto mb-5">
+          <img [src]="this.avatar" alt="" class="rounded-circle" />
+        </div>
+        <div id="info">
+          <p>
+            ID : <span>{{ this.id }}</span>
+          </p>
+          <p>
+            First Name : <span>{{ this.fname }}</span>
+          </p>
+          <p>
+            Last Name : <span>{{ this.lname }}</span>
+          </p>
+          <p>
+            Email : <span>{{ this.email }}</span>
+          </p>
+        </div>
+        <div class="mx-auto mt-5 d-flex justify-content-center">
+          <button class="btn btn-outline-danger" routerLink="/user">
+            go back
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
